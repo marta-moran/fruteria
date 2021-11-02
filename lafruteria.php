@@ -24,7 +24,7 @@ function controlador ()
             $contenido = mostrarPedido() . mostrarFormularioPedido();
         } else {
             $contenido = mostrarPedido() . mostarFormularioNuevoCliente();
-
+            session_destroy();   
         }
     }
     imprimirPantalla($contenido);
